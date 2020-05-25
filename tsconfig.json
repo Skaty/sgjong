@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types", "./custom_typings"]
+  }
+}

@@ -1,38 +1,56 @@
 {
-  "name": "phaser3-project-template",
+  "name": "sgjong",
   "version": "1.1.0",
-  "description": "A Phaser 3 Project Template",
+  "description": "MP Mahjong with SG rules",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start": "webpack-dev-server --config webpack/base.js --open",
+    "server": "ts-node -r tsconfig-paths/register src/server/index.ts",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/photonstorm/phaser3-project-template.git"
+    "url": "git+https://github.com/Skaty/sgjong.git"
   },
-  "author": "Richard Davey <rdavey@gmail.com> (http://www.photonstorm.com)",
+  "author": "Syed Abdullah <contact@syedabdullah.net>",
   "license": "MIT",
   "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
   "bugs": {
-    "url": "https://github.com/photonstorm/phaser3-project-template/issues"
+    "url": "https://github.com/Skaty/sgjong/issues"
   },
-  "homepage": "https://github.com/photonstorm/phaser3-project-template#readme",
+  "homepage": "https://github.com/Skaty/sgjong#readme",
   "devDependencies": {
     "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/express": "^4.17.6",
+    "@types/socket.io": "^2.1.8",
+    "@types/socket.io-client": "^1.4.33",
+    "@types/webpack-dev-middleware": "^3.7.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.4",
     "raw-loader": "^3.1.0",
     "terser-webpack-plugin": "^2.2.1",
+    "ts-loader": "^7.0.4",
+    "ts-node": "^8.10.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.9.0",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "phaser": "^3.20.1"
+    "express": "^4.17.1",
+    "phaser": "^3.20.1",
+    "random-words": "^1.1.1",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
   }
 }
